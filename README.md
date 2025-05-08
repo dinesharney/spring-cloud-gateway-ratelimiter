@@ -1,24 +1,24 @@
 
-# 🚀 Spring Cloud Gateway Rate Limiter
+# Spring Cloud Gateway Rate Limiter
 
 This project is a standalone microservice built using **Spring Boot 3**, **Spring Cloud Gateway**, and **Java 17**.  
 It demonstrates a **pluggable rate limiter architecture** with support for multiple algorithms like **Token Bucket** and **Leaky Bucket**.
 
 ---
 
-## 🔧 Features
+## Features
 
-- ✅ Custom rate limiting per route
-- ✅ Pluggable algorithm support (Token Bucket, Leaky Bucket)
-- ✅ Easy to extend with new algorithms (e.g., Sliding Window, Redis)
-- ✅ Built on Spring WebFlux (Reactive)
-- ✅ Config-driven setup (hardcoded in v1, dynamic-ready)
-- ✅ Swagger/OpenAPI integration
-- ✅ Postman test collection included
+- Custom rate limiting per route
+- Pluggable algorithm support (Token Bucket, Leaky Bucket)
+- Easy to extend with new algorithms (e.g., Sliding Window, Redis)
+- Built on Spring WebFlux (Reactive)
+- Config-driven setup (hardcoded in v1, dynamic-ready)
+- Swagger/OpenAPI integration
+- Postman test collection included
 
 ---
 
-## 📦 Technologies Used
+## Technologies Used
 
 - Spring Boot 3.x
 - Spring Cloud Gateway
@@ -29,7 +29,7 @@ It demonstrates a **pluggable rate limiter architecture** with support for multi
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 spring-cloud-gateway-ratelimiter/
@@ -44,7 +44,7 @@ spring-cloud-gateway-ratelimiter/
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 ### 1. Clone the project
 
@@ -67,7 +67,7 @@ mvn spring-boot:run
 
 ---
 
-## 📌 Gateway Routes
+## Gateway Routes
 
 | Route ID | Path Prefix         | Algorithm     | Limit Details           |
 |----------|----------------------|---------------|--------------------------|
@@ -76,7 +76,7 @@ mvn spring-boot:run
 
 ---
 
-## 🔑 How It Works
+## How It Works
 
 1. Each request is intercepted by a **custom filter**.
 2. A unique key is generated per client (IP).
@@ -86,7 +86,7 @@ mvn spring-boot:run
 
 ---
 
-## 🧪 Postman Test Collection
+## Postman Test Collection
 
 - Import the file `postman/rate-limiter-test.postman_collection.json`.
 - Two ready-to-test endpoints:
@@ -100,7 +100,7 @@ Expect rate limiting to kick in if limits are exceeded.
 
 ---
 
-## 🔍 Swagger UI
+## Swagger UI
 
 Access documentation at:
 
@@ -110,15 +110,15 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 🔄 Ready for Extension
+## Ready for Extension
 
-- 🔌 Plug in Redis by replacing `ConcurrentHashMap`
-- 📥 Externalize config from DB / Spring Cloud Config
-- 🧩 Add more strategies like Fixed Window or Sliding Window
+- Plug in Redis by replacing `ConcurrentHashMap`
+- Externalize config from DB / Spring Cloud Config
+- Add more strategies like Fixed Window or Sliding Window
 
 ---
 
-## 🧭 Architecture Overview
+## Architecture Overview
 
 ```
 Client → Spring Cloud Gateway → Custom Filter → RateLimiterService (TokenBucket / LeakyBucket)
@@ -128,7 +128,7 @@ Client → Spring Cloud Gateway → Custom Filter → RateLimiterService (TokenB
 
 ---
 
-## 📂 Future Improvements
+## Future Improvements
 
 - [ ] Redis-backed distributed rate limiter
 - [ ] Spring Cloud Config + Actuator `/refresh` support
@@ -137,14 +137,14 @@ Client → Spring Cloud Gateway → Custom Filter → RateLimiterService (TokenB
 
 ---
 
-## 📄 License
+## License
 
 MIT (Free for personal or commercial use)
 
 ---
 
-## 🙌 Author
+## Author
 
 Dinesh Arney  
-🔗 [LinkedIn](https://linkedin.com/in/dinesharney)  
-🧠 Passionate about scalable systems, cloud-native design, and developer growth.
+[LinkedIn](https://linkedin.com/in/dinesharney)  
+Passionate about scalable systems, cloud-native design, and developer growth.
