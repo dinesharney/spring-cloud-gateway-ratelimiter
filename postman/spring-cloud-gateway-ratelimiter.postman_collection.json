@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Rate Limiter Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "12345-abcde"
+  },
+  "item": [
+    {
+      "name": "TokenBucket Test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/tokenbucket/get",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tokenbucket",
+            "get"
+          ]
+        }
+      }
+    },
+    {
+      "name": "LeakyBucket Test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/leakybucket/get",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "leakybucket",
+            "get"
+          ]
+        }
+      }
+    }
+  ]
+}

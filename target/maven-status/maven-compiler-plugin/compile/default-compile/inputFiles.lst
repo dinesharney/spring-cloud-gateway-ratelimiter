@@ -4,5 +4,6 @@ C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter
 C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\service\LeakyBucketRateLimiter.java
 C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\filter\CustomRateLimiterGatewayFilterFactory.java
 C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\config\RateLimitConfig.java
+C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\model\RateLimitConfig.java
 C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\GatewayRateLimiterApplication.java
 C:\Github\spring-cloud-gateway-ratelimiter\src\main\java\com\example\ratelimiter\service\RateLimiterService.java
